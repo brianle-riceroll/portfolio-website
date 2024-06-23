@@ -5,7 +5,7 @@
 
   color-scheme: dark;
   color: rgba(255, 255, 255, 0.87);
-  background: linear-gradient(35deg, rgba(2,0,36,1) 0%, rgba(38,9,121,1) 0%, rgba(0,212,255,1) 100%);
+  background: radial-gradient(circle, rgb(41, 76, 250) 0%, rgb(124, 150, 245) 100%);
   background-attachment: fixed;
 
   font-synthesis: none;
@@ -14,15 +14,80 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.header-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 1em;
+  padding-left: 1em;
+}
+
+.name-img-div {
+  align-items: center;
+}
+
 ._8bit-img {
-  display: inline;
   float: left;
-  margin: 0px 0px 0px 0px;
-  padding: 0px 0px 0px 0px;
 }
 
 .title {
-  font-size: 3em;
-  position: relative;
-  top: 15px;
+  font-size: 2em;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 2em;
+}
+
+.navbar a {
+  color: inherit;
+  font-size: 2em;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+.portrait {
+  float: left;
+  margin-left: 10em;
+  margin-right: 5em;
+  border-radius: 2em;
+}
+
+.about {
+  margin-bottom: 15em;
+  align-content: center;
+}
+
+.about-me {
+  display: inline-block;
+  word-wrap: break-word;
+  width: 800px;
+}
+
+.about-text {
+  font-size: 1.7em;
+}
+
+.psu_logo {
+  border-radius: 2em;
+  float: right;
+  margin-left: 5em;
+  margin-right: 10em;
+}
+
+.education {
+  align-content: center;
+}
+
+.education-text {
+  text-align: left;
+  font-size: 1.7em;
+  margin-left: 8em;
 }
